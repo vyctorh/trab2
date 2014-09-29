@@ -1,0 +1,144 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	2
+<table>
+Tabela1	32	7	01/06/14 22:26
+geometry	0	0	445	220	
+header	1[X]	DDSA-85%[Y]	DDSA-30%[Y]	Multi-DAP[Y]	int-1[Y]	int-2[Y]	int-3[Y]
+ColWidth	100	100	100	100	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0	0	0	0
+HiddenColumn	0	0	0	0	0	0	0
+Comments								
+WindowLabel		2
+<data>
+0	165	72.96	66.08	71.68	6.5229611594	5.8163066424	8.0706103471
+1	180	72.08	65.52	72.64	4.8775414477	5.5630454955	5.8937550597
+2	195	72.16	63.92	74.32	4.3465463545	4.0582562412	5.9612698303
+3	210	70.16	65.52	72	5.3914805758	4.4805460678	5.8807629842
+4	225	69.44	60.24	69.84	5.4706991852	6.1666889077	4.628098039
+5	240	71.92	64.16	70.72	4.6539962843	4.3465463545	7.9271760402
+6	255	71.44	68.16	69.44	6.5657460823	5.9537040367	8.7419764648
+7	270	68	63.28	68.16	7.147227836	4.0649818942	9.951917506
+8	285	63.92	70.8	69.04	7.6901665121	4.2218916291	9.5891548134
+9	300	69.28	71.12	69.68	6.7185324087	4.0244593816	8.145573011
+10	315	3.28	30.8	11.76	4.412971581	4.9321217105	15.8064665293
+11	330	4.4	32.64	10.32	5.2226492264	4.1799496535	14.1609202606
+12	345	7.04	35.68	5.36	10.434308632	4.1563561462	10.5054069571
+13	360	10.64	33.92	12.48	12.4915037948	4.4361239814	16.3135997068
+14	375	18.8	36.72	16.72	12.999879656	3.4388292824	17.0636925375
+15	390	18.64	35.52	18.08	7.5344237914	5.4376432984	16.5760586447
+16	405	22.8	32.24	28.4	11.2127908619	5.6051162595	19.8489298616
+17	420	27.52	38.24	39.28	9.850941817	6.0987607224	19.6930772688
+18	435	34	38.4	53.12	11.7155652875	4.974860671	16.1706412522
+19	450	38.08	41.28	61.92	16.143589849	2.7278493054	15.6434323484
+20	465	58.64	40.08	60.24	16.5972216992	5.5826527305	12.4958767286
+21	480	68.16	45.12	62.88	10.052965883	6.3806987991	12.8624618212
+22	495	64.16	51.12	62.64	11.5666735739	5.4489348796	8.8174275713
+23	510	64.64	50.56	61.04	12.9631595823	7.1617368876	6.7422761068
+24	525	64.88	44.08	60.4	12.0289497396	8.5481197722	8.7433825175
+25	540	65.12	50.64	54.96	11.9669065815	10.9410238637	11.8795017968
+26	555	57.84	48.48	56.48	13.1394987607	10.50059533	12.2444618132
+27	570	57.2	49.12	51.04	16.0605465333	12.8624618212	11.5666735739
+28	585	62	51.44	58.24	13.5855652866	9.0165539005	12.126995475
+29	600	65.36	53.12	59.04	11.5199355235	7.4327641368	9.7942084636
+30	615	58.4	57.52	58.88	11.1999933031	8.0443357244	9.3150334113
+31	630	54.4	57.36	57.92	10.7951143942	7.0589668919	9.5810324551
+</data>
+</table>
+<multiLayer>
+G-pdf-periodo-n16	1	1	01/06/14 22:30
+geometry	484	11	515	469	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	5	5	497	406
+<PageGeometry>0.00986193	0.0118765	0.980276	0.964371</PageGeometry>
+PlotTitle		#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	Time (s)	Packet delivery (%)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+TitleFont	Cantarell	11	75	0	0	0
+ScaleFont0	Cantarell	9	75	0	0	0
+ScaleFont1	Cantarell	9	75	0	0	0
+ScaleFont2	Cantarell	9	75	0	0	0
+ScaleFont3	Cantarell	9	75	0	0	0
+AxisFont0	Cantarell	9	50	0	0	0
+AxisFont1	Cantarell	9	50	0	0	0
+AxisFont2	Cantarell	9	50	0	0	0
+AxisFont3	Cantarell	9	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#1a1a1a	#1a1a1a	#1a1a1a	#1a1a1a
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	Tabela1_1	Tabela1_DDSA-85%	2	1	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	31	1
+curve	Tabela1_1	Tabela1_DDSA-30%	2	1	#ff0000	0	1	7	2	#ff0000	#ff0000	0	#000000	14	1	2	0	0	31	1
+curve	Tabela1_1	Tabela1_Multi-DAP	2	1	#00ff00	0	1	7	3	#00ff00	#00ff00	0	#000000	14	1	2	0	0	31	1
+ErrorBars	1	Tabela1_1	Tabela1_DDSA-85%	Tabela1_int-1	1	8	#000000	1	1	1	0
+ErrorBars	1	Tabela1_1	Tabela1_DDSA-30%	Tabela1_int-2	1	8	#ff0000	1	1	1	1
+ErrorBars	1	Tabela1_1	Tabela1_Multi-DAP	Tabela1_int-3	1	8	#00ff00	1	1	1	2
+scale	0	0	100	0	6	5	0	0
+scale	1	0	100	0	6	5	0	0
+scale	2	150	640	0	6	5	0	0
+scale	3	150	640	0	6	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	0
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>470.14962593516</x>
+<y>20.579710144928</y>
+<right>632.668329177057</right>
+<bottom>2.60869565217391</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(2)%(2)
+\l(3)%(3)
+</Text>
+<Font>Cantarell	9	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
