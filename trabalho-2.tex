@@ -440,29 +440,30 @@ Smart grids have specific requirements of delay, bandwidth, reliability and time
 
 This communication may use available wired or wireless technologies that support the exchange information between components of the AMI \cite{Saputro2012,4547164}. Different types of technologies can be used: cellular technology \cite{5589988}, WiMAX, ZigBee \cite{5589988}, RF Mesh \cite{5622071}, IEEE 802.11-based Wireless Mesh Networks (WMN) and Power Line Communication (PLC) \cite{5479945}. PLC is a promising wired technology \cite{Saputro2012}, but it has limitations. In case of failures, such as physical disruption of power lines, it would not be possible to maintain communication between AMI components \cite{Gungor2006}. Wireless networks offer more benefits than wired networks, such as lower cost, ease deployment and signal availability in large areas \cite{5589988}. 
 
-Among all wireless technologies, WMN has advantages compared to single-hop infrastructured network architectures, since it communicates in a multi-hop way that extends the coverage of the network and allows communication with alternative paths in case of failures \cite{5622071,Fang2012}. WMN, however, must be adapted to the communication requirements of AMI, where hundreds of meters communicate with the Utility's headend through a Data Aggregation Point (DAP). DAPs are the gateways of this network. Typically, an AMI is constituted of networks connecting meters in the same neighbourhood to one single DAP. Each DAP is connected to the headend through AMI wide area network and if a DAP failure the meters can not communicate with headend.
+Among all wireless technologies, WMN has advantages compared to single-hop infrastructured network architectures, since it communicates in a multi-hop way that extends the coverage of the network and allows communication with alternative paths in case of failures \cite{5622071,Fang2012}. WMN, however, must be adapted to the communication requirements of AMI, where hundreds of meters communicate with the Utility's headend through a Data Aggregation Point (DAP). DAPs are the gateways of this network. Typically, an AMI is constituted of networks connecting meters in the same neighbourhood to one single DAP. Each DAP is connected to the headend through AMI wide area network. Since DAP 100\% uptime is not possible due to external environment the DAP may fail occasionally and if it failure the meters can not communicate with headend.
 
-A way to mitigate this problem is the use of multiple DAPs. The routing protocol must be able to find reliable routes to improve performance and meet the requirements of the AMI network. Given the problems faced by routing protocols in WMN to comply with AMI requirements, we propose an algorithm that dynamically selects DAPs for communication between meters and the headend. In this problem, we assume that each meter can connect, through multiple hops, to a set of DAPs. The main goal of this algorithm, called Dynamic DAP Selection Algorithm (DDSA), is to increase the reliability, robustness and resiliency allowing meters to use multiple DAPs, thus improving performance in the presence of failure.
+A way to mitigate this problem is the use of multiple DAPs. The routing protocol must be able to find reliable routes to improve performance and quickly recover from a DAP failure to meet the requirements of the AMI network. Given the problems faced by routing protocols in WMN to comply with AMI requirements, we propose an algorithm that dynamically selects DAPs for communication between meters and the headend. In this problem, we assume that each meter can connect, through multiple hops, to a set of DAPs. The main goal of this algorithm, called Dynamic DAP Selection Algorithm (DDSA), is to increase the reliability, robustness and resiliency allowing meters to use multiple DAPs, thus improving performance in the presence of failure.
 
 The organization of the paper is as follows. Section II describes the AMI communication network, its challenges and problems. Section III presents the related work. Section IV proposes DDSA and describes its principle. Section V presents the results obtained in case of failures and Section VI concludes the paper and presents ideas for future work.
 
 \section{Background}
 
-According to Farhangi \cite{Farhangi2010}, nearly 8\% of all generated energy is lost along the transmission lines and 20\% of the total generation capacity is only to support peak demands, which represent only 5\% of the total demand . About 90\% of power outages and disturbances are related to the distribution subsystem, thus the success of a smart grid depends on the deployment of a reliable interconnected distribution subsystem. 
+%According to Farhangi \cite{Farhangi2010}, nearly 8\% of all generated energy is lost along the transmission lines and 20\% of the total generation capacity is only to support peak demands, which represent only 5\% of the total demand . About 90\% of power outages and disturbances are related to the distribution subsystem, thus the success of a smart grid depends on the deployment of a reliable interconnected distribution subsystem. 
 
 The AMI aims to improve reliability and  changes the paradigm  to one where customer demands adjust to the power generation. The AMI is basically composed of smart meters, DAPs and Utility's headend, all interconnected by communication networks. 
 The headend is connected to multiple DAPs, which in turn have connections to  multiple smart meters.
-The meters send measurement data to the headend through a DAP and this traffic is characterized by the exchange of short messages. These messages have a payload that varies from tens to hundreds of bytes and are sent periodically, typically in a 15 minutes interval \cite{4547164,SRS:13}. Furthermore, the headend can send commands and requests to meters through DAPs.
+The meters send measurement data to the headend through a DAP and this traffic is characterized by the exchange of short messages. These messages have a payload that varies from tens to hundreds of bytes and are sent periodically, typically in a 15 minutes interval \cite{4547164,SRS:13}. Furthermore, the headend can send commands and requests to meters through DAPs. The DAP is a natural single point of failure, because all traffic between meters and the headend (or vice versa) flows through it. Hence a DAP failure would inhibit the entire network from working.
 
 
 According to Gungor et al \cite{Gungor2013}, each meter requires a band from 10 to 100 Kb/s and the latency should be less than 2000 ms. Since investments in the power sector are long-lasting, it is desirable that the AMI should also support long-term operations \cite{5484223}. New demands for information may arise, making the requirements more stringent such as latency that should be less than hundreds of milliseconds in applications that need information in real time \cite{5484223,Yan2013}.
 
-The AMI traffic can be classified into regular or on-demand. It is regular when data is automatically sent by the meters at predetermined intervals \cite{4547164,Plan2011} and constitutes the majority of data traffic flowing through the AMI \cite{5484223}. The on-demand traffic is composed of alert messages from meters, command and control sent by the headend  to meters and the responses to these commands \cite{Plan2011}. In the latter type of traffic, an increase in network congestion can occur due to the request for sending information by the headend to a large number of meters. The DAP is a natural single point of failure, because all traffic between meters and the headend (or vice versa) flows through it. Hence a DAP failure would inhibit the entire network from working.
 
 The residential density determines the amount of meters per area, which according to \cite{Plan2011} can be classified into rural, suburban or urban scenario, with densities varying from 10 to 2000 meters per km\textsuperscript{2}. The external environment conditions in combination with the number of meters will determine the level of interference and attenuation in communication between meters and DAPs.
 
 
-Due to the peculiarities of the AMI network and due to a large amount of smart meters, there is a possibility of problems such as loops and broken routes \cite{ramachandran2007routing}, causing a degradation in performance that may lead to unmet communication requirements. Thus the routing protocol should handle this variation, providing an acceptable level of service regardless of WMN density. Another problem is the increased amount of collisions near the DAP because all packets are forwarded to it \cite{Saputro2012}.
+%Due to the peculiarities of the AMI network and due to a large amount of smart meters, there is a possibility of problems such as loops and broken routes \cite{ramachandran2007routing}, causing a degradation in performance that may lead to unmet communication requirements. Thus the routing protocol should handle this variation, providing an acceptable level of service regardless of WMN density. Another problem is the increased amount of collisions near the DAP because all packets are forwarded to it \cite{Saputro2012}.
+
+Due to the peculiarities of the AMI network, large amount of smart meters and due to operate under outdoor environmental conditions causing a degradation in performance that may lead to unmet communication requirements. DAPs and meters are susceptible to accidents, failure, attacks or natural disasters that can disrupt AMI communication network. Thus the routing protocol should handle this problems and need to realize the failure recovering quickly and has some mechanism that, during the period that is not aware of it, will help to suffer less impact on its performance.
 
 
 
@@ -676,7 +677,7 @@ To simulate the behavior of an AMI network composed of  smart meters and DAPs, n
 
 
 
-\begin{figure*}[ht]
+\begin{figure*}[htb]
   \centering
   \mbox{
     \subfigure[DDSA-30\%\label{DDSA-30}]{\includegraphics[scale=.31]{IEEE-consolidados/G-troca-gw-ddsa30.jpg}}\quad
@@ -687,7 +688,7 @@ To simulate the behavior of an AMI network composed of  smart meters and DAPs, n
   \label{n16-dap}
 \end{figure*}
 
-\begin{figure*}[ht]
+\begin{figure*}[htb]
   \centering
   \mbox{
     \subfigure[DDSA-30\%\label{DDSA30-2}]{\includegraphics[scale=.31]{IEEE-consolidados/G-troca-gw-ddsa30-2.jpg}}\quad
@@ -730,9 +731,9 @@ The DDSA was implemented in ns-2 simulator using OLSR \cite{clausen2003optimized
 
 
 
-Figure~\ref{pdf:a} shows the packet delivery rate for all nodes as a function of time, considering the latest 60 seconds. It is noticeable that the performance of DDSA-30\% is better than the others proposals after the occurrence of the DAP failure. At time 363 seconds DDSA-30\% has about 95\% of packet delivery rate, while DDSA-80\% has 73\% and Multi-DAP has only 69\% of packets delivery. 
-This happens because DDSA-30\%, mainly in central region of the network (nodes 12 to 23), is less affected by the failure of the DAP 2. This can be noticed in Figure~\ref{pdf:b} that shows, at time of 363 seconds, about 86\% of packet delivery rate while DDSA-80\% and Multi-DAP have only 20.7\% and 11.8\%, respectively. This shows that the design choice of distributing packets among DAPs makes it more robust and resilient than others when a failure occurs. 
-Figure~\ref{pdf:c}  analyzes the behavior of the packet delivery rate for one node. Node 16 was chosen because it is located geographically between two DAPs. Notice that with DDSA-30\%, when DAP 2 fails, the reduction in the rate was not as sharp as for the other proposals, becoming 77\% and 85\% better than DDSA-80\% and Multi-DAP, respectively, at time 363 seconds. 
+Figure~\ref{pdf:a} shows the packet delivery rate for all nodes as a function of time, considering the latest 60 seconds. It is noticeable that the performance of DDSA-30\% is better than the others proposals after the occurrence of the DAP failure. At time 363 seconds DDSA-30\% has about 93\% of packet delivery rate, while DDSA-80\% has 73\% and Multi-DAP has only 67\% of packets delivery. 
+This happens because DDSA-30\%, mainly in central region of the network (nodes 12 to 23), is less affected by the failure of the DAP 2. This can be noticed in Figure~\ref{pdf:b} that shows, at time of 363 seconds, about 80\% of packet delivery rate while DDSA-80\% and Multi-DAP have only 23\% and 5\%, respectively. This shows that the design choice of distributing packets among DAPs makes it more robust and resilient than others when a failure occurs. 
+Figure~\ref{pdf:c}  analyzes the behavior of the packet delivery rate for one node. Node 16 was chosen because it is located geographically between two DAPs. Notice that with DDSA-30\%, when DAP 2 fails, the reduction in the rate was not as sharp as for the other proposals, becoming 46\% and 80.5\% better than DDSA-80\% and Multi-DAP, respectively, at time 363 seconds. 
 
 
 
@@ -747,7 +748,7 @@ After the occurrence of the DAP failure at time 300 seconds it is verified that 
 For DDSA-80\%(Fig.~\ref{DDSA85-2}), the gap to deliver new packets lasted 64 seconds. For Multi-DAP (Fig.~\ref{MultiDAP-2}), the gap lasted 81 seconds. This happens because before the failure they were sending packets only to DAP 2. Note that for DDSA-30\% (Fig.~\ref{DDSA30-2}), there is no noticeable gap because node 16 already balances the load among all DAP.
 
 
-To check if this behavior is shared by other nodes, we gathered the information shown in Figure~\ref{dist-app}. We show the DAP choices for all nodes using intensities of grayscale to represent the percentages of DAP choices by nodes. Higher values are represented by darker gray and lower values by lighter gray. Each matrix represents the percentages of choices for one DAP and each element is a representation of the  nodes position.  Notice that DDSA-30\% (Fig.~\ref{dist:a}) has a much more balanced DAP selection than the other proposals, as shown by the elements with intermediate gray. For nodes in the central region of the network with DDSA-30\% the lowest value is 14.2\%. For DDSA-80\% (Fig.~\ref{dist:b}) and Multi-DAP (Fig.~\ref{dist:c}) six nodes (nodes 12, 15, 16, 19, 20, 23) ​​do not choose  DAP 1 or DAP 2. Except by nodes 13 and 14, in DDSA-30\% all values in the central region are below 40\% for DAP 2. For DDSA-80\%, all values are above 38\% and for Multi-DAP they are above 40\%. This demonstrates that DDSA-30\% distributes more evenly the packets among DAPs  in central region of network, improving the resilience against DAP failures.
+To check if this behavior is shared by other nodes, we gathered the information shown in Figure~\ref{dist-app}. We show the DAP choices for all nodes using stack columns to represent the percentages of DAP choices by nodes. Notice that DDSA-30\% (Fig.~\ref{dist:a}) has a much more balanced DAP selection than the other proposals. For nodes in the central region of the network with DDSA-30\% the lowest value is 16.4\%. For Multi-DAP (Fig.~\ref{dist:c}) six nodes (nodes 12, 15, 16, 19, 20, 23) ​​do not choose  DAP 1 or DAP 3. Except by nodes 13 and 14, in DDSA-30\% all values in the central region are below 41.6\% for DAP 2. For DDSA-80\%, all values are above 40.2\% and for Multi-DAP they are above 45.7\% for DAP 2. This demonstrates that DDSA-30\% distributes more evenly the packets among DAPs  in central region of network, improving the resilience against DAP failures.
 
 
 %\begin{figure*}[htb]
@@ -766,7 +767,7 @@ To check if this behavior is shared by other nodes, we gathered the information 
 
 Figure~\ref{sum-intv} shows the unavailability period $\tau$ for each node with respect to the headend,\textit{ i.e.}, the sum of the periods during which each node could not reach the headend through any DAP. 
  It is noticed that the long gap to deliver new packets, as seen for node 16, is repeated for other nodes in the central region of the network. For DDSA-80\% and Multi-DAP these nodes suffered long $\tau$ to deliver packets to any DAP, while DDSA-30\% sustained lower $\tau$. 
-Nodes 13 and 14 are the closest ones to the failed DAP 2, thus suffering more influence of this failure, because its path cost is much better compared to the other DAP. Except for these nodes, the average unavailability period $\tau_{avg}$ for the DDSA-30\% is 6.2 seconds and the maximum unavailability period $\tau_{max}$ is 41.8 seconds. For DDSA-80\%, $\tau_{avg}$ is 33.7 seconds and $\tau_{max}$ is 161.6 seconds, and for Multi-DAP $\tau_{avg}$ is 42.6 seconds and $\tau_{max}$ is 170.3 seconds. 
+Nodes 13 and 14 are the closest ones to the failed DAP 2, thus suffering more influence of this failure, because its path cost is much better compared to the other DAP. Except for these nodes, the average unavailability period $\tau_{avg}$ for the DDSA-30\% is 4.2 seconds and the maximum unavailability period $\tau_{max}$ is 26.2 seconds. For DDSA-80\%, $\tau_{avg}$ is 29.5 seconds and $\tau_{max}$ is 158.8 seconds, and for Multi-DAP $\tau_{avg}$ is 40.7 seconds and $\tau_{max}$ is 166.4 seconds. 
 
 
 

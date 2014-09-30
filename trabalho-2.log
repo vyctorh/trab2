@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.18)  29 SEP 2014 17:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.18)  30 SEP 2014 08:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -309,16 +309,16 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 462.
+(Font)              <7> on input line 461.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 462.
+(Font)              <5> on input line 461.
 
 <IEEE-consolidados/Diagrama-ddsa-en.jpg, id=10, 632.3625pt x 295.1025pt>
 File: IEEE-consolidados/Diagrama-ddsa-en.jpg Graphic file (type jpg)
 
 <use IEEE-consolidados/Diagrama-ddsa-en.jpg>
 Package pdftex.def Info: IEEE-consolidados/Diagrama-ddsa-en.jpg used on input l
-ine 488.
+ine 489.
 (pdftex.def)             Requested size: 221.33018pt x 103.28741pt.
  [2 <./IEEE-consolidados/Diagrama-ddsa-en.jpg>]
 Missing character: There is no â in font ptmr7t!
@@ -327,126 +327,125 @@ Missing character: There is no ™ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [3]
-<IEEE-consolidados/grid36.jpg, id=25, 1111.15125pt x 392.46625pt>
+ <IEEE-consolidados/grid36.jpg, id=15, 1111.15125pt x 392.46625pt>
 File: IEEE-consolidados/grid36.jpg Graphic file (type jpg)
 
 <use IEEE-consolidados/grid36.jpg>
-Package pdftex.def Info: IEEE-consolidados/grid36.jpg used on input line 653.
+Package pdftex.def Info: IEEE-consolidados/grid36.jpg used on input line 654.
 (pdftex.def)             Requested size: 255.5594pt x 90.26534pt.
 
-Overfull \hbox (2.50954pt too wide) in paragraph at lines 653--654
+Overfull \hbox (2.50954pt too wide) in paragraph at lines 654--655
  [][] 
  []
 
-<IEEE-consolidados/G-pdf-app-desl.jpg, id=26, 1473.44507pt x 626.69955pt>
+<IEEE-consolidados/G-pdf-app-desl.jpg, id=16, 1473.44507pt x 626.69955pt>
 File: IEEE-consolidados/G-pdf-app-desl.jpg Graphic file (type jpg)
 
 <use IEEE-consolidados/G-pdf-app-desl.jpg>
 Package pdftex.def Info: IEEE-consolidados/G-pdf-app-desl.jpg used on input lin
-e 663.
+e 664.
 (pdftex.def)             Requested size: 257.85675pt x 109.67406pt.
 
-Overfull \hbox (4.80688pt too wide) in paragraph at lines 663--664
+Overfull \hbox (4.80688pt too wide) in paragraph at lines 664--665
  [][] 
  []
 
-<IEEE-consolidados/G-pdf-app-centro.jpg, id=27, 1473.44507pt x 626.69955pt>
+<IEEE-consolidados/G-pdf-app-centro.jpg, id=17, 1473.44507pt x 626.69955pt>
 File: IEEE-consolidados/G-pdf-app-centro.jpg Graphic file (type jpg)
 
 <use IEEE-consolidados/G-pdf-app-centro.jpg>
 Package pdftex.def Info: IEEE-consolidados/G-pdf-app-centro.jpg used on input l
-ine 666.
+ine 667.
 (pdftex.def)             Requested size: 257.85675pt x 109.67406pt.
 
-Overfull \hbox (4.80688pt too wide) in paragraph at lines 666--667
+Overfull \hbox (4.80688pt too wide) in paragraph at lines 667--668
  [][] 
  []
 
-<IEEE-consolidados/G-pdf-app-16.jpg, id=28, 1473.44507pt x 626.69955pt>
+<IEEE-consolidados/G-pdf-app-16.jpg, id=18, 1473.44507pt x 626.69955pt>
 File: IEEE-consolidados/G-pdf-app-16.jpg Graphic file (type jpg)
 
 <use IEEE-consolidados/G-pdf-app-16.jpg>
 Package pdftex.def Info: IEEE-consolidados/G-pdf-app-16.jpg used on input line 
-669.
+670.
 (pdftex.def)             Requested size: 257.85675pt x 109.67406pt.
 
-Overfull \hbox (4.80688pt too wide) in paragraph at lines 669--670
+Overfull \hbox (4.80688pt too wide) in paragraph at lines 670--671
  [][] 
  []
 
-<IEEE-consolidados/G-troca-gw-ddsa30.jpg, id=29, 398.23781pt x 316.93407pt>
+<IEEE-consolidados/G-troca-gw-ddsa30.jpg, id=19, 398.23781pt x 316.93407pt>
 File: IEEE-consolidados/G-troca-gw-ddsa30.jpg Graphic file (type jpg)
 
 <use IEEE-consolidados/G-troca-gw-ddsa30.jpg>
 Package pdftex.def Info: IEEE-consolidados/G-troca-gw-ddsa30.jpg used on input 
-line 685.
+line 686.
 (pdftex.def)             Requested size: 123.45244pt x 98.24854pt.
 
-<IEEE-consolidados/G-troca-gw-ddsa85.jpg, id=30, 398.23781pt x 316.93407pt>
+<IEEE-consolidados/G-troca-gw-ddsa85.jpg, id=20, 398.23781pt x 316.93407pt>
 File: IEEE-consolidados/G-troca-gw-ddsa85.jpg Graphic file (type jpg)
 
 <use IEEE-consolidados/G-troca-gw-ddsa85.jpg>
 Package pdftex.def Info: IEEE-consolidados/G-troca-gw-ddsa85.jpg used on input 
-line 685.
+line 686.
 (pdftex.def)             Requested size: 123.45244pt x 98.24854pt.
 
-<IEEE-consolidados/G-troca-gw-multidap.jpg, id=31, 398.23781pt x 316.93407pt>
+<IEEE-consolidados/G-troca-gw-multidap.jpg, id=21, 398.23781pt x 316.93407pt>
 File: IEEE-consolidados/G-troca-gw-multidap.jpg Graphic file (type jpg)
 
 <use IEEE-consolidados/G-troca-gw-multidap.jpg>
 Package pdftex.def Info: IEEE-consolidados/G-troca-gw-multidap.jpg used on inpu
-t line 685.
+t line 686.
 (pdftex.def)             Requested size: 123.45244pt x 98.24854pt.
 
-<IEEE-consolidados/G-troca-gw-ddsa30-2.jpg, id=32, 398.23781pt x 316.93407pt>
+<IEEE-consolidados/G-troca-gw-ddsa30-2.jpg, id=22, 398.23781pt x 316.93407pt>
 File: IEEE-consolidados/G-troca-gw-ddsa30-2.jpg Graphic file (type jpg)
 
 <use IEEE-consolidados/G-troca-gw-ddsa30-2.jpg>
 Package pdftex.def Info: IEEE-consolidados/G-troca-gw-ddsa30-2.jpg used on inpu
-t line 696.
+t line 697.
 (pdftex.def)             Requested size: 123.45244pt x 98.24854pt.
 
-<IEEE-consolidados/G-troca-gw-ddsa85-2.jpg, id=33, 398.23781pt x 316.93407pt>
+<IEEE-consolidados/G-troca-gw-ddsa85-2.jpg, id=23, 398.23781pt x 316.93407pt>
 File: IEEE-consolidados/G-troca-gw-ddsa85-2.jpg Graphic file (type jpg)
 
 <use IEEE-consolidados/G-troca-gw-ddsa85-2.jpg>
 Package pdftex.def Info: IEEE-consolidados/G-troca-gw-ddsa85-2.jpg used on inpu
-t line 696.
+t line 697.
 (pdftex.def)             Requested size: 123.45244pt x 98.24854pt.
 
-<IEEE-consolidados/G-troca-gw-multidap-2.jpg, id=34, 398.23781pt x 316.93407pt>
+<IEEE-consolidados/G-troca-gw-multidap-2.jpg, id=24, 398.23781pt x 316.93407pt>
 File: IEEE-consolidados/G-troca-gw-multidap-2.jpg Graphic file (type jpg)
 <use IEEE-consolidados/G-troca-gw-multidap-2.jpg>
 Package pdftex.def Info: IEEE-consolidados/G-troca-gw-multidap-2.jpg used on in
-put line 696.
+put line 697.
 (pdftex.def)             Requested size: 123.45244pt x 98.24854pt.
 
-<IEEE-consolidados/dist-30.jpg, id=35, 1473.44507pt x 626.69955pt>
+<IEEE-consolidados/dist-30.jpg, id=25, 1473.44507pt x 626.69955pt>
 File: IEEE-consolidados/dist-30.jpg Graphic file (type jpg)
 
 <use IEEE-consolidados/dist-30.jpg>
-Package pdftex.def Info: IEEE-consolidados/dist-30.jpg used on input line 706.
+Package pdftex.def Info: IEEE-consolidados/dist-30.jpg used on input line 707.
 (pdftex.def)             Requested size: 250.48235pt x 106.5375pt.
 
-<IEEE-consolidados/dist-85.jpg, id=36, 1473.44507pt x 626.69955pt>
+<IEEE-consolidados/dist-85.jpg, id=26, 1473.44507pt x 626.69955pt>
 File: IEEE-consolidados/dist-85.jpg Graphic file (type jpg)
 
 <use IEEE-consolidados/dist-85.jpg>
-Package pdftex.def Info: IEEE-consolidados/dist-85.jpg used on input line 709.
+Package pdftex.def Info: IEEE-consolidados/dist-85.jpg used on input line 710.
 (pdftex.def)             Requested size: 250.48235pt x 106.5375pt.
 
-<IEEE-consolidados/dist-multi.jpg, id=37, 1473.44507pt x 626.69955pt>
+<IEEE-consolidados/dist-multi.jpg, id=27, 1473.44507pt x 626.69955pt>
 File: IEEE-consolidados/dist-multi.jpg Graphic file (type jpg)
 
 <use IEEE-consolidados/dist-multi.jpg>
 Package pdftex.def Info: IEEE-consolidados/dist-multi.jpg used on input line 71
-2.
+3.
 (pdftex.def)             Requested size: 250.48235pt x 106.5375pt.
- [4 <./IEEE-consolidados/grid36.jpg> <./IEEE-consolidados/G-pdf-app-desl.jpg> <
-./IEEE-consolidados/G-pdf-app-centro.jpg> <./IEEE-consolidados/G-pdf-app-16.jpg
-> <./IEEE-consolidados/dist-30.jpg> <./IEEE-consolidados/dist-85.jpg> <./IEEE-c
-onsolidados/dist-multi.jpg>]
+ [3] [4 <./IEEE-consolidados/G-troca-gw-ddsa30.jpg> <./IEEE-consolidados/G-troc
+a-gw-ddsa85.jpg> <./IEEE-consolidados/G-troca-gw-multidap.jpg> <./IEEE-consolid
+ados/G-troca-gw-ddsa30-2.jpg> <./IEEE-consolidados/G-troca-gw-ddsa85-2.jpg> <./
+IEEE-consolidados/G-troca-gw-multidap-2.jpg> <./IEEE-consolidados/grid36.jpg>]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ‹ in font ptmr7t!
@@ -459,26 +458,25 @@ File: IEEE-consolidados/G-wo-rcv-pkt.jpg Graphic file (type jpg)
 
 <use IEEE-consolidados/G-wo-rcv-pkt.jpg>
 Package pdftex.def Info: IEEE-consolidados/G-wo-rcv-pkt.jpg used on input line 
-762.
+763.
 (pdftex.def)             Requested size: 257.85675pt x 109.67406pt.
 
-Overfull \hbox (4.80688pt too wide) in paragraph at lines 762--763
+Overfull \hbox (4.80688pt too wide) in paragraph at lines 763--764
  [][] 
  []
 
-[5 <./IEEE-consolidados/G-troca-gw-ddsa30.jpg> <./IEEE-consolidados/G-troca-gw-
-ddsa85.jpg> <./IEEE-consolidados/G-troca-gw-multidap.jpg> <./IEEE-consolidados/
-G-troca-gw-ddsa30-2.jpg> <./IEEE-consolidados/G-troca-gw-ddsa85-2.jpg> <./IEEE-
-consolidados/G-troca-gw-multidap-2.jpg>]
+[5 <./IEEE-consolidados/G-pdf-app-desl.jpg> <./IEEE-consolidados/G-pdf-app-cent
+ro.jpg> <./IEEE-consolidados/G-pdf-app-16.jpg> <./IEEE-consolidados/dist-30.jpg
+> <./IEEE-consolidados/dist-85.jpg> <./IEEE-consolidados/dist-multi.jpg> <./IEE
+E-consolidados/G-wo-rcv-pkt.jpg>]
 <IEEE-consolidados/G-no-pdf-app.jpg, id=45, 1595.9625pt x 438.63875pt>
 File: IEEE-consolidados/G-no-pdf-app.jpg Graphic file (type jpg)
 
 <use IEEE-consolidados/G-no-pdf-app.jpg>
 Package pdftex.def Info: IEEE-consolidados/G-no-pdf-app.jpg used on input line 
-784.
+785.
 (pdftex.def)             Requested size: 247.37163pt x 67.9883pt.
- (./trabalho-2.bbl [6 <./IEEE-consolidados/G-wo-rcv-pkt.jpg> <./IEEE-consolidad
-os/G-no-pdf-app.jpg>])
+ (./trabalho-2.bbl [6 <./IEEE-consolidados/G-no-pdf-app.jpg>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -492,28 +490,32 @@ Before submitting the final camera ready copy, remember to:
 
 [7
 
-] (./trabalho-2.aux) ) 
+] (./trabalho-2.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  4067 strings out of 493304
  63009 string characters out of 6139871
- 151667 words of memory out of 5000000
+ 156667 words of memory out of 5000000
  7482 multiletter control sequences out of 15000+600000
  36328 words of font info for 65 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
- 38i,15n,24p,1194b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.en
-c}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
-utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on trabalho-2.pdf (7 pages, 2890916 bytes).
+ 38i,15n,24p,1085b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on trabalho-2.pdf (7 pages, 2890217 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream
